@@ -10,6 +10,7 @@ const pow = function(base, n) {
 	return base * pow(base, n-1);
 
 };
+console.log(pow(2, 10));
 
 //Triangle Stars
 
@@ -43,6 +44,8 @@ if(height <= 0){
  stars(0 , 2 *  height - 1);
   
 }
+
+triangleStars(30);
 
 //Reverse
 
