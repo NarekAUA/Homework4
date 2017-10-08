@@ -58,3 +58,40 @@ return myReverse(str, length);
 
 console.log(reverse("Narek"));
 
+//CheckerBoard
+
+const stars = function (numStars){
+	if (numStars <= 0) {return ""}
+
+
+		return "* " + stars(numStars - 1);
+};
+
+const spaces = function(numSpaces){
+	if (numSpaces <= 0) {return ""}
+
+
+		return " *" + spaces(numSpaces - 1);
+};
+
+const checkb = function(num, height){
+	if (height <= 0) {return ""}
+
+	
+		console.log(stars(num));
+		console.log(spaces(num));
+		return checkb(num, height - 1);
+};
+
+const checkerboard = function(size){
+	if (size % 2 === 0) {
+		return checkb(size , size / 2);
+	}
+	if (size % 2 !== 0) {
+		return checkb(size , (size - 1)/ 2) + stars(size);
+	}
+
+};
+
+console.log(checkerboard(9));
+
