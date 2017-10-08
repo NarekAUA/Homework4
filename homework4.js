@@ -40,7 +40,7 @@ if(height <= 0){
     stars(numSpaces + 1, numStars - 2);
   };
   
- (stars(0 , 2 *  height - 1));
+ stars(0 , 2 *  height - 1);
   
 }
 
