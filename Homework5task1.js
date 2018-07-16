@@ -3,7 +3,7 @@ const rand = function(num) {
 	return Math.floor(Math.random() * num) + 1;
 };
 
-const colorArray = ['red', 'blue', 'green'];
+const colorArray = ['red', 'yellow', 'green'];
 
 const createPoints = function(count, canvasWidth, canvasHeight){
 
